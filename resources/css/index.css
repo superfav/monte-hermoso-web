@@ -29,6 +29,11 @@ body{
 
 .navbar-default {
     background-color: white;
+    border-style: none;
+}
+
+nav .container {
+    background-color: white;
     border-color: var(--main-color);
     border-style: solid none none;
     border-radius: 0;
@@ -36,6 +41,10 @@ body{
 
 .page-header {
     border-style: none;
+}
+
+.redes {
+	padding: 40px;
 }
 
 /* Sticky footer styles
