@@ -1,0 +1,1 @@
+:root{--main-color: rgb(17, 15, 80)}body{font-family:'Crimson Text',serif;font-size:18px}.navbar-default .navbar-nav li a{color:var(--main-color)}.navbar-default{background-color:#fff;border-color:var(--main-color);border-style:solid none none;border-radius:0}.page-header{border-style:none}
