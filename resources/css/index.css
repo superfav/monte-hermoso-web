@@ -39,6 +39,13 @@ nav .container {
     border-radius: 0;
 }
 
+.navbar-default .navbar-nav .active a, .navbar-default .navbar-nav .active a:hover, .navbar-default .navbar-nav .active a:focus {
+    background-color: white;
+    color: var(--main-color);
+    text-decoration: underline;
+    font-style: italic;
+}
+
 .page-header {
     border-style: none;
 }
