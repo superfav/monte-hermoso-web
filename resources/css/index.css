@@ -1,5 +1,5 @@
 :root {
-  --main-color: rgb(17, 15, 80);
+  --main-color: rgb(14, 9, 80);
 }
 
 body{
@@ -7,8 +7,24 @@ body{
 	font-size: 18px;
 }
 
-.navbar-default .navbar-nav li a {
+.navbar-default .navbar-nav li a:hover {
+	text-decoration: underline;
+}
+
+.navbar-default .navbar-nav li a, body, a {
 	color: var(--main-color);
+}
+
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
 }
 
 .navbar-default {
@@ -20,4 +36,23 @@ body{
 
 .page-header {
     border-style: none;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 30px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 30px;
+  font-size: 11px;
 }
