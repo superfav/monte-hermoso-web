@@ -4,7 +4,12 @@
 
 body{
 	font-family: 'Crimson Text', serif;
-	font-size: 18px;
+	font-size: 16px;
+}
+
+.nav {
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .navbar-default .navbar-nav li a:hover {
@@ -27,6 +32,16 @@ body{
     }
 }
 
+/*
+.navbar-default .navbar-toggle {
+    border-style: none;
+}
+*/
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: var(--main-color);
+}
+
 .navbar-default {
     background-color: white;
     border-style: none;
@@ -34,16 +49,13 @@ body{
 
 nav .container {
     background-color: white;
-    border-color: var(--main-color);
-    border-style: solid none none;
-    border-radius: 0;
+    border-style: none;
 }
 
-.navbar-default .navbar-nav .active a, .navbar-default .navbar-nav .active a:hover, .navbar-default .navbar-nav .active a:focus {
-    background-color: white;
-    color: var(--main-color);
-    text-decoration: underline;
-    font-style: italic;
+#bs-example-navbar-collapse-1 {
+    border-color: var(--main-color);
+    border-style: solid none none;  
+    border-width: 1.333333px
 }
 
 .page-header {

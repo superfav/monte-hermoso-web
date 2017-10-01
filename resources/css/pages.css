@@ -1,0 +1,24 @@
+
+.navbar-default .navbar-nav .active a, .navbar-default .navbar-nav .active a:focus, .navbar-default .navbar-nav .active a:hover {
+    background-color: white;
+    color: var(--main-color);
+    text-decoration: underline;
+    font-style: italic;
+}
+
+@media (min-width: 768px) {
+	.page-header {
+	    background-image: url('../images/cabezal_navegacion.jpg');
+	    background-position: center;
+	    background-repeat: no-repeat;
+	}
+}
+
+/*
+ * Blog posts
+ */
+
+.blog-post {
+	margin-bottom: 60px;
+	line-height: 20px;
+}
