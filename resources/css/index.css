@@ -52,14 +52,8 @@ nav .container {
     border-style: none;
 }
 
-#bs-example-navbar-collapse-1 {
-    border-color: var(--main-color);
-    border-style: solid none none;  
-    border-width: 1.333333px
-}
-
 .page-header {
-    border-style: none;
+  border-style: none;
 }
 
 .redes {
