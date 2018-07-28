@@ -1,4 +1,3 @@
-
 .navbar-default .navbar-nav .active a, .navbar-default .navbar-nav .active a:focus, .navbar-default .navbar-nav .active a:hover {
     background-color: white;
     color: var(--main-color);
@@ -15,12 +14,37 @@
 	}
 }
 
-/*
- * Blog posts
- */
-
 .blog-post {
 	margin-bottom: 60px;
 	line-height: 20px;
 	text-align: justify;
 }
+
+.btn-link {
+	position: relative;
+	color: var(--main-color);
+    font-size: 120%;
+    font-weight: bold;
+  }
+  .btn-link[data-toggle="collapse"]:after {
+	content: "\25B8"; /* "play" icon */
+    position: absolute;
+    right: -5px;
+	/* rotate "play" icon from > (right arrow) to down arrow */
+	-webkit-transform: rotate(90deg);
+	-moz-transform:    rotate(90deg);
+	-ms-transform:     rotate(90deg);
+	-o-transform:      rotate(90deg);
+	transform:         rotate(90deg);
+  }
+  .btn-link[data-toggle="collapse"].collapsed:after {
+	-webkit-transform: rotate(0deg);
+	-moz-transform:    rotate(0deg);
+	-ms-transform:     rotate(0deg);
+	-o-transform:      rotate(0deg);
+	transform:         rotate(0deg);
+  }
+  .btn:focus,.btn:active {
+	outline: none;
+	box-shadow: none;
+ }
