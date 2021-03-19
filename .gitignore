@@ -1,1 +1,6 @@
-bootstrap
+.DS_Store
+.htaccess*
+provisorio.txt
+
+bootstrap/
+cgi-bin/
