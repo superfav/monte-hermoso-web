@@ -11,7 +11,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="" />
+  <meta name="description" content="{{short_description}}" />
   <meta name="author" content="Monte Hermoso Ediciones Ediciones" />
   <link rel="icon" href="/favicon.png" type="image/png" />
   <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" />
@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="../resources/css/index.min.css" />
   <link rel="stylesheet" href="../resources/css/pages.min.css" />
   <link rel="stylesheet" href="../resources/css/montehermoso.css" />
-  <title> -  – Editorial Monte Hermoso</title>
+  <title>{{title}} - {{author}} – Editorial Monte Hermoso</title>
   <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -57,33 +57,66 @@
     <div class="row">
       <div class="col-md-2"></div>
       <div class="col-md-3">
-        <img src="../resources/images/products/" alt="" class="img-responsive center-block">
+        {{#cover}}
+        <img src="../resources/images/products/{{src}}" alt="{{title}}" class="img-responsive center-block">
+        {{/cover}}
+        {{^cover}}
+        <div id="carousel-book-cover" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            {{#covers}}
+            <div class="item{{#first}} active{{/first}}">
+              <img src="../resources/images/products/{{src}}" alt="{{alt}}">
+            </div>
+            {{/covers}}
+          </div>
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-book-cover" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-book-cover" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
+        {{/cover}}
         <p class="text-center">
-          <b>$</b><br>
+          <b>${{price}}</b><br>
           <a mp-mode="dftl"
-            href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id="
+            href="https://www.mercadopago.com.ar/checkout/v1/redirect?pref_id={{mercado_pago_id}}"
             name="MP-payButton" class="grey-ge-m-rn-none">Comprar</a>
         </p>
+        {{#amazon_id}}
+        <p class="text-center">
+          <a href="https://www.amazon.com/dp/{{amazon_id}}">Versión e-book disponible en <b>Amazon</b></a>
+        </p>
+        {{/amazon_id}}
       </div>
       <div class="col-md-5">
         <div class="blog-post">
-          <p><b></b><br />
-            <b><i></i></b><br />
-            <b></b><br />
-            <br />
-            
+          <p><b>{{collection}}</b><br />
+            <b><i>{{title}}</i></b><br />
+            <b>{{author}}</b><br />
+            {{#translation}}Traducción de {{translation}}{{/translation}}<br />
+            {{edition}}
           </p>
-          <p></p>
-          <p>ISBN <br>
-          14&times;22 cm,  páginas</p>
+          {{#description}}
+          <p>{{{.}}}</p>
+          {{/description}}
+          <p>ISBN {{isbn}}<br>
+          {{width}}&times;{{height}} cm, {{pages}} páginas</p>
           <p><b>Contenidos:</b></p>
           <ul>
-            <li><a href="">Índice y créditos [PDF]</a></li>
+            <li><a href="{{index}}">Índice y créditos [PDF]</a></li>
           </ul>
+          {{#prensa.length}}
           <p><b>Prensa:</b></p>
           <ul>
-            <li><a href=""></a></li>
+            {{#prensa}}
+            <li><a href="{{url}}">{{{label}}}</a></li>
+            {{/prensa}}
           </ul>
+          {{/prensa.length}}
         </div>
       </div>
     </div>

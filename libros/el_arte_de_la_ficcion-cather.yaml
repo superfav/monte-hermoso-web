@@ -1,0 +1,46 @@
+collection: Ensayo
+title: El arte de la ficción
+author: Willa Cather
+translation: Vanesa Frejtman
+edition: 2018
+isbn: 978-987-46493-2-4
+width: 14
+height: 22
+pages: 200
+price: "600"
+mercado_pago_id: 237732179-20e9787a-353e-4a84-a2cd-198c95b2e3b0
+index: Primeras-paginas-El-arte-de-la-ficcion.pdf
+cover:
+  src: cather.jpg
+short_description: >-
+  El arte de la ficción.
+  Willa Cather escribió mucho y sobre variados temas durante toda su vida, desplazándose con gran facilidad
+  por todos los géneros; con temple vitalista y con una prosa límpida y precisa, tenía un talento excepcional
+  para recrear personajes y escenarios.
+description:
+  - Willa Cather escribió mucho y sobre variados temas durante toda su vida, desplazándose con gran facilidad
+    por todos los géneros; con temple vitalista y con una prosa límpida y precisa, tenía un talento excepcional
+    para recrear personajes y escenarios.
+  - Comenzó publicando notas para los medios locales mientras estudiaba en la Universidad de Nebraska,
+    ejercicio profesional que sostendría por más de veinte años, llegando a ser editora y directora de varios
+    periódicos y revistas. A través del periodismo logró independencia, viajar, y conocer el mundo.
+  - En esta recopilación se incluyen los textos de <i>Not Under Forty</i>, el único volumen de ensayos que
+    Cather publicó en vida, y los reunidos luego de su muerte en <i>Willa Cather on Writing. Critical Studies
+    on Writing as an Art</i> (este último inédito en español hasta el momento).
+  - Mezclando la crónica en primera persona, los diarios de viaje y su correspondencia personal, la autora nos
+    acerca reflexiones sobre su propia creación literaria y la de sus escritores admirados, del pasado y
+    contemporáneos a ella. En relación con su ficción, estos textos nos permiten, además, reconstruir el camino
+    que recorrió para convertirse en una gran escritora.
+prensa:
+  - url: https://www.accion.coop/el-arte-de-la-ficcion
+    label: El arte de la ficción, por Valeria Tentoni, en Acción
+  - url: https://www.lavoz.com.ar/numero-cero/willa-cather-y-belleza-de-una-voz
+    label: "Aquí están, estos son: las joyas literarias del 2018 según 24 lectores de lujo, en <em>REDACCIÓN</em>"
+  - url: https://www.redaccion.com.ar/aqui-estan-estos-son-las-joyas-literarias-del-2018-segun-24-lectores-de-lujo/
+    label: Ensayos que se leen como ficción, por Laura Galarza y Natalia Poblet, en La Solapa de Laura y Nati <i>(29.07.2020)</i>
+  - url: https://www.youtube.com/watch?v=x9lbMqjzFJ8
+    label: “Willa Cather y la belleza de una voz”, Eugenia Almeida (Suplemento Cultural "La voz" del diario <i>La voz del interior</i>)
+  - url: https://www.clarin.com/revista-enie/literatura/resenas/reconocer-verdadero-artista_0_SkpjAWkZX.html
+    label: “Cómo reconocer a un verdadero artista”, Virginia Cosín (<i>Revista Ñ</i>, 6 de junio de 2018)
+  - url: https://www.infobae.com/america/cultura-america/2018/08/30/willa-cather-y-james-salter-lecciones-magistrales-sobre-la-libertad-en-la-literatura/
+    label: "“Willa Cather y James Salter: lecciones magistrales sobre la libertad en la literatura” (<i>Infobae</i>, 29 de agosto de 2018)"
